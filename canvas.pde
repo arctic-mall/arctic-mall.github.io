@@ -8,5 +8,5 @@ void setup (){
 }
 void draw (){
   background (255, 0, 0);
-  if (song.volume < 0.3) song.volume += 0.01;
+  if (song.volume < 0.3) song.volume += 0.002;
 }
