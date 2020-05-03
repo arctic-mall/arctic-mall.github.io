@@ -2,11 +2,11 @@ var song = new Audio ("https://d3ctxlq1ktw2nl.cloudfront.net/production/2018-10-
 
 void setup (){
   size (600, 400);
-  song.currentTime = 208;
+  song.currentTime = 210;
   song.volume = 0.0;
   song.play ();
 }
 void draw (){
   background (255, 0, 0);
-  if (song.volume < 0.3) song.volume += 0.002;
+  if (song.volume < 0.3) song.volume += 0.005;
 }
