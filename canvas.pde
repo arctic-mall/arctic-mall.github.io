@@ -3,7 +3,7 @@ var song = new Audio ("https://d3ctxlq1ktw2nl.cloudfront.net/production/2018-10-
 void setup (){
   size (600, 400);
   song.currentTime = 1142;
-  song.volume = 0.3;
+  song.volume = 0.0;
   song.play ();
 }
 void draw (){
