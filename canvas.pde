@@ -1,4 +1,4 @@
-var song = new Audio ("https://radio.plaza.one/mp3_96.mp3");
+var song = new Audio ("https://d3ctxlq1ktw2nl.cloudfront.net/production/2018-10-24/6004351-44100-2-a121c0c34208f.mp3");
 
 void setup (){
   size (600, 400);
