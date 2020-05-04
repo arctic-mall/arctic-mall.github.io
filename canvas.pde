@@ -12,7 +12,7 @@ PImage back;
 int img = 0;
 
 void setup (){
-  size (600, 400);
+  size (800, 600);
   song.currentTime = 211;
   song.volume = 0.0;
   song.play ();
@@ -34,5 +34,5 @@ void draw (){
   if (song.volume < 0.04) song.volume += 0.0005;
   // image (back, 0, 0);
   if (frameCount % 5 == 0) img = (img + 1) % 23;
-  image (avatar [img], width / 2, height / 2, 256, 256);
+  image (avatar [img], width / 2, height / 2, 192, 192);
 }
