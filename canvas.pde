@@ -13,7 +13,7 @@ void setup (){
   song.play ();
   
   for (int i = 0; i < avatar.length; i ++){
-    avatar [i] = loadImage ("/steven animation/" + str (i + 1) + ".png");
+    avatar [i] = loadImage ("/avatar/" + str (i + 1) + ".png");
     avatar [i].resize (128, 128);
   }
   
