@@ -10,7 +10,7 @@ PImage back;
 int img = 0;
 
 void setup (){
-  size (600, 400, OPENGL);
+  size (600, 400);
   song.currentTime = 211;
   song.volume = 0.0;
   song.play ();
@@ -25,12 +25,12 @@ void setup (){
   
   imageMode (CENTER, CENTER);
   
-  smooth (16);
+  noSmooth ();
 }
 void draw (){
   background (40);
   if (song.volume < 0.04) song.volume += 0.0005;
   // image (back, 0, 0);
   if (frameCount % 5 == 0) img = (img + 1) % 23;
-  image (avatar [img], width / 2, height / 2);
+  image (avatar [img], width / 2, height / 2, 128, 128);
 }
