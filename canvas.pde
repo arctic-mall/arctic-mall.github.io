@@ -25,9 +25,8 @@ void setup (){
   
   imageMode (CENTER, CENTER);
   
-  noSmooth();
-  hint(DISABLE_TEXTURE_MIPMAPS);
-  ((PGraphicsOpenGL)g).textureSampling(3);
+  noSmooth( );
+  ((PGraphicsOpenGL)g).textureSampling (3);
 }
 void draw (){
   background (40);
