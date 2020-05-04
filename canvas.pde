@@ -14,7 +14,6 @@ void setup (){
   
   for (int i = 0; i < avatar.length; i ++){
     avatar [i] = loadImage ("/avatar/" + str (i + 1) + ".png");
-    avatar [i].resize (128, 128);
   }
   
   String url = "https://live.staticflickr.com/136/379609181_5edd930a04_z.jpg";
@@ -28,5 +27,5 @@ void draw (){
   if (song.volume < 0.04) song.volume += 0.0005;
   // image (back, 0, 0);
   if (frameCount % 5 == 0) img = (img + 1) % 23;
-  image (avatar [img], width / 2, height / 2);
+  image (avatar [img], width / 2, height / 2, 128, 128);
 }
