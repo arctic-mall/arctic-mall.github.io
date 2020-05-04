@@ -29,5 +29,5 @@ void draw (){
   if (frameCount % 5 == 0) img = (img + 1) % 23;
   noSmooth ();
   image (avatar [img], width / 2, height / 2);
-  smooth ();
+  smooth (2);
 }
