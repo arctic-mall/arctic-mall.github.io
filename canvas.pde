@@ -8,7 +8,8 @@ void setup (){
   song.volume = 0.0;
   song.play ();
   
-  back = loadImage ("https://live.staticflickr.com/136/379609181_5edd930a04_z.jpg", "jpg");
+  String url = "https://live.staticflickr.com/136/379609181_5edd930a04_z.jpg";
+  back = loadImage (url, "jpg");
 }
 void draw (){
   background (back);
