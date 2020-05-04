@@ -15,5 +15,6 @@ void setup (){
 void draw (){
   background (0);
   if (song.volume < 0.04) song.volume += 0.0005;
-  image (back, 0, 0);
+  // image (back, 0, 0);
+  
 }
