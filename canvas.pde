@@ -7,7 +7,7 @@ var song = new Audio ("https://d3ctxlq1ktw2nl.cloudfront.net/production/2018-10-
 
 PImage [] avatar = new PImage [23];
 
-PImage back;
+PImage back, vignette;
 
 int img = 0;
 
@@ -23,6 +23,7 @@ void setup (){
   
   String url = "https://live.staticflickr.com/136/379609181_5edd930a04_z.jpg";
   back = loadImage (url, "jpg");
+  vignette = loadImage ("/images/side_vignette.png");
   back.resize (width, height);
   
   imageMode (CENTER, CENTER);
@@ -30,9 +31,11 @@ void setup (){
   noSmooth ();
 }
 void draw (){
-  background (40);
+  background (25);
   if (song.volume < 0.3) song.volume += 0.002;
-  // image (back, 0, 0);
   if (frameCount % 5 == 0) img = (img + 1) % 23;
+  
+  image (vignette, 0, 0);
+  
   image (avatar [img], width / 2, height / 2, 192, 192);
 }
