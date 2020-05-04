@@ -16,7 +16,7 @@ void setup (){
   song.play ();
   
   for (int i = 0; i < avatar.length; i ++){
-    avatar [i] = loadImage ("/avatar2/" + str (i + 1) + ".png");
+    avatar [i] = loadImage ("/avatar/" + str (i + 1) + ".png");
   }
   
   String url = "https://live.staticflickr.com/136/379609181_5edd930a04_z.jpg";
