@@ -31,7 +31,7 @@ void setup (){
 }
 void draw (){
   background (40);
-  if (song.volume < 0.04) song.volume += 0.0005;
+  if (song.volume < 0.3) song.volume += 0.002;
   // image (back, 0, 0);
   if (frameCount % 5 == 0) img = (img + 1) % 23;
   image (avatar [img], width / 2, height / 2, 192, 192);
