@@ -21,11 +21,10 @@ void setup (){
   back.resize (width, height);
   
   imageMode (CENTER, CENTER);
-  
-  noSmooth ();
+  ((PGraphicsOpenGL)g).textureSampling(3);
 }
 void draw (){
-  background (0);
+  background (40);
   if (song.volume < 0.04) song.volume += 0.0005;
   // image (back, 0, 0);
   if (frameCount % 5 == 0) img = (img + 1) % 23;
