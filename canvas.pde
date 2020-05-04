@@ -21,7 +21,7 @@ void setup (){
   back.resize (width, height);
   
   imageMode (CENTER, CENTER);
-  ((PGraphicsOpenGL)g).textureSampling(3);
+  hint(DISABLE_TEXTURE_MIPMAPS);
 }
 void draw (){
   background (40);
