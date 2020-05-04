@@ -1,4 +1,5 @@
 import javax.media.opengl.*;
+import processing.opengl.*;
 
 var song = new Audio ("https://d3ctxlq1ktw2nl.cloudfront.net/production/2018-10-24/6004351-44100-2-a121c0c34208f.mp3");
 
@@ -9,7 +10,7 @@ PImage back;
 int img = 0;
 
 void setup (){
-  size (600, 400);
+  size (600, 400, OPENGL);
   song.currentTime = 211;
   song.volume = 0.0;
   song.play ();
@@ -23,6 +24,10 @@ void setup (){
   back.resize (width, height);
   
   imageMode (CENTER, CENTER);
+  
+  noSmooth();
+  hint(DISABLE_TEXTURE_MIPMAPS);
+  ((PGraphicsOpenGL)g).textureSampling(3);
 }
 void draw (){
   background (40);
