@@ -27,5 +27,5 @@ void draw (){
   if (song.volume < 0.04) song.volume += 0.0005;
   // image (back, 0, 0);
   if (frameCount % 5 == 0) img = (img + 1) % 23;
-  image (avatar [img], width / 2, height / 2;
+  image (avatar [img], width / 2, height / 2);
 }
