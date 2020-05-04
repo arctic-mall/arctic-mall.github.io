@@ -12,7 +12,7 @@ PImage back;
 int img = 0;
 
 void setup (){
-  size (800, 600);
+  size (1440, 600);
   song.currentTime = 211;
   song.volume = 0.0;
   song.play ();
