@@ -1,3 +1,5 @@
+import javax.media.opengl.*;
+
 var song = new Audio ("https://d3ctxlq1ktw2nl.cloudfront.net/production/2018-10-24/6004351-44100-2-a121c0c34208f.mp3");
 
 PImage [] avatar = new PImage [23];
@@ -21,7 +23,6 @@ void setup (){
   back.resize (width, height);
   
   imageMode (CENTER, CENTER);
-  hint(DISABLE_TEXTURE_MIPMAPS);
 }
 void draw (){
   background (40);
