@@ -1,3 +1,5 @@
+document.body.style.zoom="80%";
+
 import javax.media.opengl.*;
 import processing.opengl.*;
 
