@@ -25,8 +25,7 @@ void setup (){
   
   imageMode (CENTER, CENTER);
   
-  noSmooth( );
-  ((PGraphicsOpenGL)g).textureSampling (3);
+  smooth (16);
 }
 void draw (){
   background (40);
